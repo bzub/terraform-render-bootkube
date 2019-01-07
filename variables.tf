@@ -92,24 +92,6 @@ variable "trusted_certs_dir" {
   default     = "/usr/share/ca-certificates"
 }
 
-variable "ca_certificate" {
-  description = "Existing PEM-encoded CA certificate (generated if blank)"
-  type        = "string"
-  default     = ""
-}
-
-variable "ca_key_alg" {
-  description = "Algorithm used to generate ca_key (required if ca_cert is specified)"
-  type        = "string"
-  default     = "RSA"
-}
-
-variable "ca_private_key" {
-  description = "Existing Certificate Authority private key (required if ca_certificate is set)"
-  type        = "string"
-  default     = ""
-}
-
 # unofficial, temporary, may be removed without notice
 
 variable "apiserver_port" {
